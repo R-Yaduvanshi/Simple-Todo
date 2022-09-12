@@ -1,0 +1,198 @@
+.main_container {
+  width: 100%;
+  height: auto;
+  /* margin-top: 10px; */
+  /* background-color: tomato; */
+}
+.head {
+  text-align: center;
+  /* border: 1px solid green; */
+  /* font-family: "Lobster", cursive;
+  font-family: "Rubik Moonrocks", cursive; */
+  font-family: "League Gothic", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Rubik Moonrocks", cursive;
+  color: greenyellow;
+}
+.sub_container {
+  width: 40%;
+  min-height: auto;
+  /* border: 1px solid red; */
+  margin: 10px 30% 0 30%;
+  padding-top: 10px;
+  max-height: fit-content;
+  /* background-color: aquamarine; */
+  background-color: #000000;
+  border: 3px solid greenyellow;
+  border-radius: 10px;
+}
+.input_div {
+  width: 98%;
+  margin: 10px 1% 0 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid greenyellow; */
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+.input_div:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+  /* border-bottom: none; */
+}
+.input {
+  padding: 1.5rem;
+  width: 75%;
+  /* background-color: aquamarine; */
+  background-color: #000000;
+  border: 0;
+  font-size: larger;
+  border-radius: 10px;
+  color: red;
+  /* outline: none; */
+}
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  /* padding: 2.3rem 1.5rem; */
+  outline: none;
+}
+.btn_add {
+  padding: 10px;
+  width: 20%;
+  height: 2.6rem;
+  border-radius: 10px;
+  background-color: #f4ff81;
+  /* margin-left: 5%; */
+}
+.btn_add:hover {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* TodoList Style */
+.tl_main_container {
+  width: 98%;
+  min-height: 3rem;
+  max-height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 5px;
+  margin-bottom: 10px; */
+  margin: 5px 1% 10px 1%;
+  /* border: 2px solid orange; */
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+}
+.tl_main_container:hover {
+  background-color: #b388ff;
+}
+.item_div {
+  display: flex;
+  /* border: 1px solid yellow; */
+  width: 65%;
+  justify-content: space-around;
+}
+.btn_div {
+  display: flex;
+  width: 20%;
+  /* border: 1px solid blue; */
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+}
+.tl_btn_mark {
+  border: 0;
+  background: none;
+}
+.tl_delete_btn {
+  border: 0;
+  background: none;
+}
+.bicheck {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #18ffff;
+}
+.bicheck:hover {
+  color: #00e676;
+  cursor: pointer;
+}
+.fatrash {
+  height: 2rem;
+  width: 2rem;
+  color: black;
+}
+.fatrash:hover {
+  color: #ff1744;
+
+  cursor: pointer;
+}
+.moveup {
+  height: 2.1rem;
+  width: 2.5rem;
+  color: #18ffff;
+}
+.moveup:hover {
+  color: #000063;
+  cursor: pointer;
+}
+.completetext {
+  font-family: "Merriweather", serif;
+}
+.tasktext {
+  font-family: "Courgette", cursive;
+  color: greenyellow;
+  text-align: center;
+}
+
+/* Media screen */
+@media only screen and (max-width: 1000px) {
+  .fatrash {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .bicheck {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .item_div {
+    display: flex;
+    /* border: 1px solid yellow; */
+    flex-direction: column;
+    width: 65%;
+    justify-content: space-around;
+    column-gap: 15px;
+  }
+  .fatrash:hover {
+    color: #ff1744;
+    cursor: pointer;
+  }
+  .bicheck:hover {
+    color: green;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .btn_div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    column-gap: 15px;
+    /* background-color: aquamarine; */
+  }
+  .fatrash:hover {
+    color: #ff1744;
+    cursor: pointer;
+  }
+  .bicheck:hover {
+    color: green;
+    cursor: pointer;
+  }
+}
